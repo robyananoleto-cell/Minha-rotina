@@ -1,0 +1,21 @@
+MINHA ROTINA — primeira versão PWA
+
+O que esta versão já faz:
+- Cadastra tarefas com categoria, prioridade, data, horário/período e repetição.
+- Guarda os dados no armazenamento local do navegador deste aparelho.
+- Permite concluir e excluir tarefas.
+- Ao abrir, transfere tarefas vencidas e não concluídas para hoje.
+- Cria a próxima ocorrência ao concluir uma tarefa recorrente.
+- Tem estrutura PWA e cache básico para uso offline após a primeira visita.
+
+Limitações importantes:
+- Para instalar como aplicativo, publique estes arquivos em um endereço HTTPS (por exemplo, GitHub Pages).
+- Os dados ficam neste navegador/aparelho; limpar os dados do navegador pode apagá-los.
+- A permissão de notificações é apenas uma preparação. Notificações agendadas confiáveis em segundo plano exigem implementação adicional (por exemplo, backend ou recursos nativos).
+- A repetição mensal nesta versão usa aproximação de 30 dias e precisa ser refinada.
+- O reagendamento automático ocorre quando o app é aberto.
+
+Como testar:
+1. Hospede todos os arquivos em um site HTTPS.
+2. Abra o endereço no Chrome do Android.
+3. Menu ⋮ > Adicionar à tela inicial / Instalar aplicativo.

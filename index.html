@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#e9eee5"><meta name="description" content="Organize sua rotina com leveza.">
+<link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icon.svg">
+<title>Minha Rotina</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div><small>MINHA ROTINA</small><h1>Um dia de cada vez 🌿</h1><p id="today"></p></div><button id="notifyBtn" class="quiet">Ativar lembretes</button></header>
+<section class="summary"><div><b id="pending">0</b><span>Pendentes</span></div><div><b id="done">0</b><span>Concluídas</span></div><div><b id="progress">0%</b><span>Progresso</span></div></section>
+<nav id="filters"><button class="active" data-filter="Todas">Todas</button><button data-filter="Casa">Casa</button><button data-filter="Trabalho">Trabalho</button><button data-filter="Faculdade">Faculdade</button><button data-filter="Pessoal">Pessoal</button><button data-filter="Hábitos">Hábitos</button></nav>
+<main><div class="section-title"><h2 id="listTitle">Tarefas</h2><button id="newBtn">＋ Nova tarefa</button></div><p id="moved" class="notice" hidden></p><div id="tasks"></div></main>
+<dialog id="taskDialog"><form id="taskForm"><h2>Nova tarefa</h2><label>O que precisa fazer?<input id="taskName" required maxlength="100" placeholder="Ex.: Hidratar o cabelo"></label>
+<div class="two"><label>Categoria<select id="category"><option>Casa</option><option>Trabalho</option><option>Faculdade</option><option>Pessoal</option><option>Hábitos</option></select></label><label>Prioridade<select id="priority"><option>Alta</option><option selected>Média</option><option>Baixa</option></select></label></div>
+<div class="two"><label>Data<input id="date" type="date" required></label><label>Horário<input id="time" type="time"></label></div>
+<label>Período<select id="period"><option>Manhã</option><option>Tarde</option><option>Noite</option></select></label>
+<label>Repetir<select id="repeat"><option value="none">Não repetir</option><option value="daily">Diariamente</option><option value="weekly">Semanalmente</option><option value="monthly">Mensalmente</option></select></label>
+<div class="actions"><button type="button" class="quiet" id="cancel">Cancelar</button><button type="submit">Salvar tarefa</button></div></form></dialog>
+<footer>Feito para deixar sua rotina mais leve 💚</footer><script src="app.js"></script>
+</body></html>
